@@ -31,7 +31,7 @@ export const findPrevPalindrome = (dob) => {
     } else {
       day -= 1;
       if (day < 1) {
-        day = maxDays;
+        day = getMaxDays(month - 1, year);
         month -= 1;
         if (month < 1) {
           month = 12;
